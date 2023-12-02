@@ -1,5 +1,5 @@
-const readLines = async (dir: string): Promise<string[]> => {
-  const file = Bun.file(dir + "/input.txt")
+const readLines = async (dir: string, example: boolean = false): Promise<string[]> => {
+  const file = Bun.file(dir + `${example ? "/example.txt" : "/input.txt"}`)
   const contents = await file.text()
   const lines = contents.split("\n")
 
