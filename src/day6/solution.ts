@@ -7,10 +7,9 @@ const part1 = (races: number[][]) => {
     const [time, distance] = race;
     const winners = [];
     for (let i = 0; i < time; i++) {
-      const speed = i;
-      const distanceLeft = time - speed;
-      if (distanceLeft * speed > distance) {
-        winners.push(distanceLeft * speed)
+      const maxDistance = i*(time - i);
+      if (maxDistance > distance) {
+        winners.push(maxDistance)
       }
     }
     racesWon.push(winners.length)
@@ -40,4 +39,4 @@ const part1 = (races: number[][]) => {
   console.log("Part 2:", part1(singleRace));
 })();
 
-export { part1, part2 };
+export { part1 };
