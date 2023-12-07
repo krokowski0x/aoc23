@@ -2,7 +2,7 @@ import { expect, test, describe } from "bun:test";
 import { readLines } from "../utils";
 import { part1, part2 } from "./solution";
 
-describe("Day 4", async () => {
+describe("Day 5", async () => {
   describe("Example", async () => {
     const [seeds, ...lines] = await readLines(import.meta.dir, true);
     const almanac = { seeds: seeds.split(": ")[1].split(" ").map(Number) };

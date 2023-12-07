@@ -81,7 +81,6 @@ const part1 = (hands: string[][]) => {
   let sum = 0;
 
   for (const [i, values] of Object.values(ranking).flat().reverse().entries()) {
-    console.log("Rank:", i + 1, "value:", values);
     sum += (i + 1) * Number(values[1]);
   }
   return sum;
@@ -130,7 +129,6 @@ const part2 = (hands: string[][]) => {
       CARDS[highest[0]] += CARDS["J"];
       CARDS["J"] = 0;
 
-      console.log(CARDS, highest);
     }
 
     const mapHandToValues = hand[0]
@@ -181,7 +179,6 @@ const part2 = (hands: string[][]) => {
   let sum = 0;
 
   for (const [i, values] of Object.values(ranking).flat().reverse().entries()) {
-    console.log("Rank:", i + 1, "value:", values);
     sum += (i + 1) * Number(values[1]);
   }
   return sum;
@@ -197,7 +194,7 @@ const part2 = (hands: string[][]) => {
   console.log("Part 1:", part1(hands));
 
   // Part 2
-  console.log("Part 2:", part2(hands)); //249292235 - 250375448
+  console.log("Part 2:", part2(hands));
 })();
 
 export { part1, part2 };

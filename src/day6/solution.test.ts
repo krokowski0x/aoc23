@@ -1,8 +1,8 @@
 import { expect, test, describe } from "bun:test";
 import { readLines } from "../utils";
-import { part1, part2 } from "./solution";
+import { part1 } from "./solution";
 
-describe("Day 3", async () => {
+describe("Day 6", async () => {
   describe("Example", async () => {
     const lines = await readLines(import.meta.dir, true);
     const [times, distances] = lines.map((line) =>
