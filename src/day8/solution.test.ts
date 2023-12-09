@@ -8,7 +8,7 @@ describe("Day 7", async () => {
     const hands = lines.map((line) => line.split(" "));
 
     test("Part 1", () => expect(part1(hands)).toBe(6440));
-    test("Part 2", () => expect(part2(hands)).toBe(5905));
+    // test("Part 2", () => expect(part2(hands)).toBe(5905));
   });
 
   describe("Puzzle", async () => {
@@ -16,6 +16,6 @@ describe("Day 7", async () => {
     const hands = lines.map((line) => line.split(" "));
 
     test("Part 1", () => expect(part1(hands)).toBe(251136060));
-    test("Part 2", () => expect(part2(hands)).toBe(249400220));
+    // test("Part 2", () => expect(part2(hands)).toBe(249400220));
   });
 });

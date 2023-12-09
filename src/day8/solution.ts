@@ -25,8 +25,6 @@ const part2 = (directions: string[], nodes: Record<string, string[]>) => {
     node[0].endsWith("A")
   );
 
-  console.log(currentNodes);
-
   outerLoop: while (true) {
     for (const dir of directions) {
       // console.log("\nDIR:", dir);
@@ -60,7 +58,7 @@ const part2 = (directions: string[], nodes: Record<string, string[]>) => {
   console.log("Part 1:", part1(directions, nodes));
 
   // Part 2
-  console.log("Part 2:", part2(directions, nodes));
+  // console.log("Part 2:", part2(directions, nodes));
 })();
 
 export { part1, part2 };
